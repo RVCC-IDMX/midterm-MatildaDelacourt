@@ -63,6 +63,7 @@ nav li{
     font-size:large;
     border-right: solid;
     border-right: double;
+    border-width: 3px;
     padding: 5px;
     display: inline-block;
     text-align: center;
@@ -130,7 +131,7 @@ h1{
     color:white;
 }
 /* Tablet Layout */
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px) and (max-width: 1023px){
         header h1{
             font-size: xxx-large;
         }
@@ -145,5 +146,50 @@ h1{
             max-width: 35%;
         }        
     }
-    
+
+/* Desktop Layout */
+    @media screen and (min-width: 1024px){
+        body{
+            max-width:1200px;
+            width:100%;
+            display:grid;
+            grid-template-columns: auto auto auto auto auto;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            background: linear-gradient(to bottom, #765729, #000000);
+            border-image-slice: 1;
+        }
+        footer{
+            width:100%;
+            padding: 0;
+            background: rgba(206, 203, 196);  
+        }
+        nav{
+            background: rgba(206, 203, 196);   
+        }
+        aside{
+            width: auto;
+            background: rgba(206, 203, 196);  
+        }    
+  
+        main{
+            grid-column-start: 1;
+            grid-column-end:5;
+            padding:10px;
+            background: rgba(206, 203, 196);  
+        }
+        header,nav,footer{
+            grid-column-start: 1;
+            grid-column-end: 6;
+        }
+        #cover{
+            max-width: 30%;
+        }
+        #cryptogram{
+            width:70%;
+            margin-left: auto;
+            margin-right:auto;
+        }
+    }
 
