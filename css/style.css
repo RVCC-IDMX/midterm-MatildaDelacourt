@@ -4,7 +4,7 @@
 /* Basic single column layout */
 body{
     border: #886644;
-    background: rgba(218, 210, 201, 0.7);
+    background: rgba(206, 203, 196);  
     box-shadow:10px 10px 5px grey inset;
     background-attachment: fixed;
     border:5px outset #886644; 
